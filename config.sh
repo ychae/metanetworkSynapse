@@ -4,10 +4,10 @@
 outputpath="/shared/network/"
 
 # location of Expression data on Synapse
-dataSynId="syn8281425"
+dataSynId="syn8281528"
 
 # id of folder on Synapse that network files will go to
-parentId="syn8281267"
+parentId="syn8281288"
 
 # path to error output
 errorOutput="$outputpath/errorLogs"
@@ -16,4 +16,4 @@ errorOutput="$outputpath/errorLogs"
 outOutput="$outputpath/outLogs"
 
 # commit message
-versionCommitMessage="mssm rnaseq fp"
+versionCommitMessage="mssm rnaseq stg"
