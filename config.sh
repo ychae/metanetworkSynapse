@@ -16,4 +16,4 @@ errorOutput="$outputpath/errorLogs"
 outOutput="$outputpath/outLogs"
 
 # commit message
-versionCommitMessage="mssm rnaseq itg"
+versionCommitMessage="mssm rnaseq ifg"
