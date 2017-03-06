@@ -10,12 +10,12 @@ rankCons.net.ids = c(rosmap.ad = 'syn6188446', rosmap.nci = 'syn6188210')
 
 module.methods = c('CFinder', 'GANXiS', 'fast_greedy', 'hclust', 'infomap', 'label_prop', 
                    'linkcommunities', 'louvain', 'spinglass', 'walktrap');
-module.exec.paths = c('/shared/Github/metanetworkSynapse/CFinder-2.0.6--1448/',
-                      '/shared/Github/metanetworkSynapse/GANXiS_v3.0.2/',
+module.exec.paths = c('/shared/metanetworkSynapse/CFinder-2.0.6--1448/',
+                      '/shared/metanetworkSynapse/GANXiS_v3.0.2/',
                       rep('./', length(module.methods)-2))
 
-repository.name = 'th1vairam/metanetworkSynapse'
-branch.name = 'modules_dev'
+repository.name = 'Sage-Bionetworks/metanetworkSynapse'
+branch.name = 'master'
 file.name = 'buildModules.R'  
 
 synapse.config.path = '/shared/synapseConfig'
