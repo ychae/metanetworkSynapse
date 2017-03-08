@@ -12,8 +12,8 @@ repository = commandArgs(TRUE)[[5]];#'th1vairam/metanetworkSynapse'
 branchName = commandArgs(TRUE)[[6]];#'modules_dev'
 fileName = commandArgs(TRUE)[[7]];#'getModules.R'  
 
-# apiKey.file = commandArgs(TRUE)[[8]];#'/shared/apikey.txt' 
-configPath = commandArgs(TRUE)[[8]];#'/shared/synapseConfig'
+apiKey.file = commandArgs(TRUE)[[8]];#'/shared/apikey.txt' 
+# configPath = commandArgs(TRUE)[[8]];#'/shared/synapseConfig'
 library.path = commandArgs(TRUE)[[9]];#'/shared/mylibs'
 
 #### Set library paths ####
