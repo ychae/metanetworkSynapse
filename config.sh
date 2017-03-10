@@ -4,10 +4,10 @@
 outputpath="/shared/network/"
 
 # location of Expression data on Synapse
-dataSynId="syn8356371"
+dataSynId="syn8356369"
 
 # id of folder on Synapse that network files will go to
-parentId="syn8360599"
+parentId="syn8360598"
 
 # path to error output
 errorOutput="$outputpath/errorLogs"
@@ -16,4 +16,4 @@ errorOutput="$outputpath/errorLogs"
 outOutput="$outputpath/outLogs"
 
 # commit message
-versionCommitMessage="MCADGS TCX"
+versionCommitMessage="MCADGS CER"
