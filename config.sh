@@ -4,10 +4,10 @@
 outputpath="/shared/network/"
 
 # location of Expression data on Synapse
-dataSynId="syn8356369"
+dataSynId="syn7984097"
 
 # id of folder on Synapse that network files will go to
-parentId="syn8360598"
+parentId="syn8360591"
 
 # path to error output
 errorOutput="$outputpath/errorLogs"
@@ -16,4 +16,4 @@ errorOutput="$outputpath/errorLogs"
 outOutput="$outputpath/outLogs"
 
 # commit message
-versionCommitMessage="MCADGS CER"
+versionCommitMessage="rosmap reprocessed rnaseq with no dx adjustment"
