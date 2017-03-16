@@ -16,4 +16,4 @@ errorOutput="$outputpath/errorLogs"
 outOutput="$outputpath/outLogs"
 
 # commit message
-versionCommitMessage="rosmap reprocessed rnaseq with no dx adjustment"
+versionCommitMessage="rosmap reprocessed rnaseq with no dx adjustment rank consensus"
