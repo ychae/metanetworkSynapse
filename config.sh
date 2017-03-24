@@ -4,10 +4,10 @@
 outputpath="/shared/network/"
 
 # location of Expression data on Synapse
-dataSynId="syn8281530"
+dataSynId="syn8257637"
 
 # id of folder on Synapse that network files will go to
-parentId="syn8360596"
+parentId="syn8360592"
 
 # path to error output
 errorOutput="$outputpath/errorLogs"
@@ -16,4 +16,4 @@ errorOutput="$outputpath/errorLogs"
 outOutput="$outputpath/outLogs"
 
 # commit message
-versionCommitMessage="MSSM rnaseq PHG network inference from reprocessed data"
+versionCommitMessage="mayo rnaseq cer rank consensus networks from reprocessed data"
