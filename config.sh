@@ -7,7 +7,7 @@ outputpath="/shared/network/"
 dataSynId="syn8281530"
 
 # id of folder on Synapse that network files will go to
-parentId="syn8281281"
+parentId="syn8360596"
 
 # path to error output
 errorOutput="$outputpath/errorLogs"
