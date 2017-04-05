@@ -5,8 +5,8 @@
 # tmp = synQuery('select name,id from file where projectId == "syn5584871" and fileType == "csv" and 
 #                dataType == "analysis" and normalizationStatus	== "TRUE" and analysisType	== "statisticalNetworkReconstruction" and
 #                method	== "bic"')
-bic.net.ids = c(mssmFp.ad = 'syn8340017')
-rankCons.net.ids = c(mssmFp.ad = 'syn8340019')
+bic.net.ids = c(mssmStg.ad = 'syn8343704')
+rankCons.net.ids = c(mssmStg.ad = 'syn8343716')
 
 module.methods = c('CFinder', 'GANXiS', 'fast_greedy', 'hclust', 'infomap', 'label_prop', 
                    'linkcommunities', 'louvain', 'spinglass', 'walktrap');
