@@ -10,7 +10,7 @@
 #                      MayoEGWAS.CBE = 'syn8421921')
 
 bic.net.ids = c(mssmStg.ad = 'syn8343704')
-rankCons.net.ids = c(mssmStg.ad = 'syn8343716'
+rankCons.net.ids = c(mssmStg.ad = 'syn8343716')
 
 module.methods = c('CFinder', 'GANXiS', 'fast_greedy', 
                    'label_prop', 'louvain', 'spinglass',
