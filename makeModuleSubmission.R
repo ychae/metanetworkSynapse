@@ -9,8 +9,8 @@
 #                      MSBB.PHG = 'syn8345270', MSBB.STG = 'syn8343716', MSBB.FP = 'syn8340019', MayoEGWAS.TCX = 'syn8419231',
 #                      MayoEGWAS.CBE = 'syn8421921')
 
-bic.net.ids = c(mssmFp.ad = 'syn8340017')
-rankCons.net.ids = c(mssmFp.ad = 'syn8340019')
+bic.net.ids = c(mssmStg.ad = 'syn8343704')
+rankCons.net.ids = c(mssmStg.ad = 'syn8343716'
 
 module.methods = c('CFinder', 'GANXiS', 'fast_greedy', 
                    'label_prop', 'louvain', 'spinglass',
