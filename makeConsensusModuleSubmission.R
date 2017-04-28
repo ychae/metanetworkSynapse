@@ -1,17 +1,9 @@
 # Function to make submission scripts for consensus module generation with sge
 
 #### Get inputs ####
-bic.net.ids = c(MayoRNAseq.TCX = 'syn8276546', MayoRNAseq.CBE = 'syn8281722', MSBB.IFG = 'syn8349785', 
-                MSBB.PHG = 'syn8345109', MSBB.STG = 'syn8343704', MSBB.FP = 'syn8340017', MayoEGWAS.TCX = 'syn8419174',
-                MayoEGWAS.CBE = 'syn8421913')
-
-rankCons.net.ids = c(MayoRNAseq.TCX = 'syn8276556', MayoRNAseq.CBE = 'syn8281727',  MSBB.IFG = 'syn8349787',
-                     MSBB.PHG = 'syn8345270', MSBB.STG = 'syn8343716', MSBB.FP = 'syn8340019', MayoEGWAS.TCX = 'syn8419231',
-                     MayoEGWAS.CBE = 'syn8421921')
-
-module.folder.ids = c(MayoRNAseq.TCX = 'syn8508499', MayoRNAseq.CBE = 'syn8548178',  MSBB.IFG = 'syn8619801',
-                      MSBB.PHG = 'syn8608724', MSBB.STG = 'syn8615206', MSBB.FP = 'syn8379809', MayoEGWAS.TCX = 'syn8672883',
-                      MayoEGWAS.CBE = 'syn8672911')
+bic.net.ids = c(mssm.STG = 'syn8343704')
+rankCons.net.ids = c(mssm.STG = 'syn8343716') 
+module.folder.ids = c(mssm.STG = 'syn8615206')
 
 cons.methods = c('kmeans')
 
@@ -19,7 +11,8 @@ repository.name = 'th1vairam/metanetworkSynapse'
 branch.name = 'modules_dev'
 file.name = 'buildModules.R'  
 
-synapse.config.path = '/shared/synapseConfig'
+#synapse.config.path = '/shared/synapseConfig'
+synapse.config.path = '/shared/apiKey.txt'
 r.library.path = '/shared/rlibs'
 
 # Make submission directory
