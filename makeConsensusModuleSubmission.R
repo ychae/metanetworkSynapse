@@ -12,7 +12,7 @@ branch.name = 'modules_dev'
 file.name = 'buildModules.R'  
 
 #synapse.config.path = '/shared/synapseConfig'
-synapse.config.path = '/shared/apiKey.txt'
+synapse.config.path = '/shared/apikey.txt'
 r.library.path = '/shared/rlibs'
 
 # Make submission directory
