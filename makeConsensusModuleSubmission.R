@@ -4,9 +4,9 @@ library(synapseClient)
 synapseLogin()
 
 #### Get inputs ####
-bic.net.ids = c(mssm.STG = 'syn8343704')
-rankCons.net.ids = c(mssm.STG = 'syn8343716') 
-module.folder.ids = c(mssm.STG = 'syn8615206')
+bic.net.ids = c(mssm.PHG = 'syn8345109')
+rankCons.net.ids = c(mssm.PHG = 'syn8345270') 
+module.folder.ids = c(mssm.PHG = 'syn8608724')
 
 cons.methods = c('kmeans')
 
