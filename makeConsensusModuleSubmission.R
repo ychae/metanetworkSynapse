@@ -1,5 +1,8 @@
 # Function to make submission scripts for consensus module generation with sge
 
+library(synapseClient)
+synapseLogin()
+
 #### Get inputs ####
 bic.net.ids = c(mssm.STG = 'syn8343704')
 rankCons.net.ids = c(mssm.STG = 'syn8343716') 
