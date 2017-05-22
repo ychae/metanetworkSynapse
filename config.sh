@@ -16,4 +16,4 @@ errorOutput="$outputpath/errorLogs"
 outOutput="$outputpath/outLogs"
 
 # commit message
-versionCommitMessage="mayo rnaseq tcx network inference from reprocessed data for May data release"
+versionCommitMessage="mayo rnaseq tcx rank consensus networks from reprocessed data for May data release"
