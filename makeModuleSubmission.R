@@ -13,7 +13,8 @@ rankCons.net.ids = c(ROSMAP = 'syn8268680')
 
 #module.methods = c('CFinder', 'GANXiS', 'fast_greedy', 'label_prop', 'louvain', 'spinglass', 'walktrap', 'infomap', 'linkcommunities');
 module.methods = c('linkcommunities');
-module.exec.paths = c('/shared/metanetwork/CFinder-2.0.6--1448/', '/shared/metanetwork/GANXiS_v3.0.2/', replicate(7, './'));
+#module.exec.paths = c('/shared/metanetwork/CFinder-2.0.6--1448/', '/shared/metanetwork/GANXiS_v3.0.2/', replicate(7, './'));
+module.exec.paths = './';
 run.id = seq(1,20,1);
 
 repository.name = 'Sage-Bionetworks/metanetworkSynapse'
