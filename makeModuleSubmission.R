@@ -21,7 +21,7 @@ repository.name = 'Sage-Bionetworks/metanetworkSynapse'
 branch.name = 'master'
 file.name = 'buildModules.R'  
 
-synapse.config.path = '/shared/apikey.txt'
+synapse.config.path = '/shared/apiKey.txt'
 r.library.path = '/shared/rlibs'
 
 # Make submission directory
