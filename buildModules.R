@@ -48,12 +48,16 @@ synapseLogin(apiKey = apiKey.file)
 
 #### Get the latest commit of used files from github ####
 thisRepo <- githubr::getRepo(repository = repository, ref = "branch", refName = branchName)
+print("retrieved repo")
 thisFile <- githubr::getPermlink(repository = thisRepo, repositoryPath= fileName)
+print("retrieved file")
 
 #### Get input data from synapse and formulate adjacency matrix ####
 # Get bicNetworks.rda
 bic.obj = synGet(bicNet.id)
+print ("retrieved bic object")
 load(bic.obj@filePath) # this will load an R object nameds bicNetworks
+print ("loaded bic object")
 all.used.ids = bicNet.id # for provenance
 writeLines(paste('Total number of edges', sum(as.matrix(bicNetworks$network))))
 
@@ -74,15 +78,15 @@ gc()
 #### Compute modules using specified algorithm ####
 # Compute modules
 mod = switch (module.method,
-              CFinder = metanetwork::findModules.CFinder(adj, path = path, nperm = 10, min.module.size = 30),
-              GANXiS = metanetwork::findModules.GANXiS(adj, path = path, nperm = 10, min.module.size = 30),
-              fast_greedy = metanetwork::findModules.fast_greedy(adj, nperm = 10, min.module.size = 30),
-              label_prop = metanetwork::findModules.label_prop(adj, nperm = 10, min.module.size = 30), 
-              louvain = metanetwork::findModules.louvain(adj, nperm = 10, min.module.size = 30),
-              spinglass = metanetwork::findModules.spinglass(adj, nperm = 10, min.module.size = 30),
-              walktrap = metanetwork::findModules.walktrap(adj, nperm = 10, min.module.size = 30),
-              infomap = metanetwork::findModules.infomap(adj, nperm = 10, min.module.size = 30), 
-              linkcommunities = metanetwork::findModules.linkcommunities(adj, nperm = 10, min.module.size = 30))
+              #CFinder = metanetwork::findModules.CFinder(adj, path = path, nperm = 10, min.module.size = 30),
+              #GANXiS = metanetwork::findModules.GANXiS(adj, path = path, nperm = 10, min.module.size = 30),
+              #fast_greedy = metanetwork::findModules.fast_greedy(adj, nperm = 10, min.module.size = 30),
+              #label_prop = metanetwork::findModules.label_prop(adj, nperm = 10, min.module.size = 30), 
+              #louvain = metanetwork::findModules.louvain(adj, nperm = 10, min.module.size = 30),
+              #spinglass = metanetwork::findModules.spinglass(adj, nperm = 10, min.module.size = 30),
+              #walktrap = metanetwork::findModules.walktrap(adj, nperm = 10, min.module.size = 30),
+              #infomap = metanetwork::findModules.infomap(adj, nperm = 10, min.module.size = 30), 
+              linkcommunities = metanetwork::findModules.linkcommunities(adj, nperm = 1, min.module.size = 30))
 
 # Find modularity quality metrics
 mod = as.data.frame(mod)
@@ -122,3 +126,4 @@ obj.qc$annotations$analysisType = "moduleQC"
 obj.qc = synapseClient::synStore(obj.qc, activity = synGetActivity(obj))
 
 stopCluster(cl)
+
