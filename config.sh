@@ -4,7 +4,7 @@
 outputpath="/shared/network/"
 
 # location of Expression data on Synapse
-dataSynId="syn10706435"
+dataSynId="syn10706418"
 
 # id of folder on Synapse that network files will go to
 parentId="syn10347355"
@@ -16,4 +16,4 @@ errorOutput="$outputpath/errorLogs"
 outOutput="$outputpath/outLogs"
 
 # commit message
-versionCommitMessage="CRANIO validation cohort network analysis"
+versionCommitMessage="CRANIO original cohort network analysis"
